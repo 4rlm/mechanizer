@@ -9,7 +9,9 @@ Light, easy to use wrapper for Mechanize and NokoGiri.  No configuration or erro
 
 ### Recommended Gems
 Note: URL MUST be in proper format and be valid, example:
+
 Correct: https://www.example.com
+
 Incorrect: www.example.com, example.com, https://example.com
 
 1. If you need to pre-format your URLs, try using `CrmFormatter gem`

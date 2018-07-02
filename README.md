@@ -78,7 +78,7 @@ texts_and_hrefs = [
 ### 5. Example Parsing Page:
 There are several ways to parse and manipulate `noko_hash[:page]`.  Essentially, you can parse the page using its css classes and html tags.  You can use either or both together.  Some pages are very straight forward, but others can require a lot of skill.  Here is a good reference guide: [Nokogiri Tutorials](http://www.nokogiri.org/tutorials).  All Nokogiri methods are available through this wrapper.  This wrapper simply helps you avoid setting up, manages and reduces errors, and helps to automate your scraping process.
 
-### For the Wikipedia URL in the example above, at the time of this README there is a group of icons on its homepage.  If you right-click on any of them you can inspect.  Look for any classes that interest you.  In this example, it's `.other-project`.  Simply paste it like below to get started.  Remember, there are several ways to do this, so read the docs and explore what's available.
+For the Wikipedia URL in the example above, at the time of this README there is a group of icons on its homepage.  If you right-click on any of them you can inspect.  Look for any classes that interest you.  In this example, it's `.other-project`.  Simply paste it like below to get started.  Remember, there are several ways to do this, so read the docs and explore what's available.
 
 ```
 other_projects = page.css('.other-project')&.text

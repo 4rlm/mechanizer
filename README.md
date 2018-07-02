@@ -12,8 +12,8 @@ Note: URL MUST be in proper format and be valid, example:
 Correct: https://www.example.com
 Incorrect: www.example.com, example.com, https://example.com
 
-### 1. If you need to pre-format your URLs, try using `CrmFormatter gem`
-### 2. If you need to verify your URLs, try using `UrlVerifier gem`, which includes the `CrmFormatter gem` inside of it.
+1. If you need to pre-format your URLs, try using `CrmFormatter gem`
+2. If you need to verify your URLs, try using `UrlVerifier gem`, which includes the `CrmFormatter gem` inside of it.
 
 Then, feed the results from those gems into this gem.  The documentation below assumes the URLs are correctly formatted and have been verified before passing them through the `Mechanizer gem`.
 

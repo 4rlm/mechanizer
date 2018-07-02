@@ -1,3 +1,3 @@
 module Mechanizer
-  VERSION = "0.10"
+  VERSION = "1.10"
 end

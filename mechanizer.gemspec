@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["4rlm@protonmail.ch"]
 
   spec.summary       = %q{Mechanize & NokoGiri Wrapper for Automated WebScraping and WebPage Parsing}
-  spec.description   = %q{Mechanize & NokoGiri Wrapper for Automated WebScraping and WebPage Parsing.}
+  spec.description   = %q{Mechanize & NokoGiri Wrapper for Automated WebScraping and WebPage Parsing. Light, easy to use wrapper for Mechanize and NokoGiri. No configuration or error handling to worry about. Simply enter the target URL and Mechanizer scrapes the page for you to easily parse.}
 
   spec.homepage      = 'https://github.com/4rlm/mechanizer'
   spec.license       = "MIT"

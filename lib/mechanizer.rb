@@ -12,5 +12,6 @@ require 'timeout'
 
 
 module Mechanizer
-  # Your code goes here...
+
+
 end

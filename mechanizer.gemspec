@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Adam Booth"]
   spec.email         = ["4rlm@protonmail.ch"]
 
-  spec.summary       = %q{Pending - Reserving Namespace for Mechanize & NokoGiri Wrapper}
-  spec.description   = %q{Pending - Reserving Namespace for Mechanize & NokoGiri Wrapper.}
+  spec.summary       = %q{Mechanize & NokoGiri Wrapper for Automated WebScraping and WebPage Parsing}
+  spec.description   = %q{Mechanize & NokoGiri Wrapper for Automated WebScraping and WebPage Parsing.}
 
   spec.homepage      = 'https://github.com/4rlm/mechanizer'
   spec.license       = "MIT"

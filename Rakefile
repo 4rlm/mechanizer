@@ -16,23 +16,23 @@ task :console do
   require "active_support/all"
   ARGV.clear
 
-  mechanized_res = run_mechanizer
-  # binding.pry
+  noko_page_hash = run_mechanizer
+  binding.pry
 
   IRB.start
 end
 
 
 def run_mechanizer
-  binding.pry
-  urls = [https://www.blackwellford.com https://www.mccreasubaru.com http://www.centurychevy.com https://www.mccreasubaru.com]
-
-  # args = { timeout_limit: 60 }
   noko = Mechanizer::Noko.new
-  web_url = urls.first
-  binding.pry
+  args = {url: 'https://www.wikipedia.org', timeout: 30}
+  noko_hash = noko.scrape(args)
 
-  mechanized_res = noko.start_noko(web_url, timeout)
-  binding.pry
-  
+  err_msg = noko_hash[:err_msg]
+  page = noko_hash[:page]
+  texts_and_hrefs = noko_hash[:texts_and_hrefs]
+
+  other_projects = page.css('.other-project')&.text
+  other_projects = other_projects.split("\n").reject(&:blank?)
+
 end

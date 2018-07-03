@@ -1,9 +1,7 @@
-RSpec.describe Mechanizer do
-  it "has a version number" do
-    expect(Mechanizer::VERSION).not_to be nil
-  end
+require 'mechanizer'
+require 'spec_helper'
+# require 'crm_formatter'
 
-  it "does something useful" do
-    expect(false).to eq(true)
-  end
+RSpec.describe Mechanizer do
+  # let(:scrub_obj) { ScrubDb }
 end

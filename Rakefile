@@ -1,6 +1,7 @@
 require "bundler/gem_tasks"
 require "rspec/core/rake_task"
 require 'mechanizer'
+require 'noko_test_results'
 
 
 RSpec::Core::RakeTask.new(:spec)
@@ -25,6 +26,9 @@ end
 
 def run_mechanizer
   noko = Mechanizer::Noko.new
+  binding.pry
+  # NokoTestResults.wiki_noko_result
+
   args = {url: 'https://www.wikipedia.org', timeout: 30}
   noko_hash = noko.scrape(args)
 
@@ -34,5 +38,4 @@ def run_mechanizer
 
   other_projects = page.css('.other-project')&.text
   other_projects = other_projects.split("\n").reject(&:blank?)
-
 end

@@ -5,7 +5,6 @@
 # require 'open-uri'
 # require 'whois'
 # require 'delayed_job'
-#
 # require 'timeout'
 # require 'net/ping'
 
@@ -72,7 +71,9 @@ module Mechanizer
     end
 
     def pre_noko_msg(url)
-      puts "\n\n#{'='*40}\nSCRAPING: #{url}\nMax Wait Set: #{@timeout} Seconds\n\n"
+      msg = "\n\n#{'='*40}\nSCRAPING: #{url}\nMax Wait Set: #{@timeout} Seconds\n\n"
+      puts msg
+      msg
     end
 
     def error_parser(err_msg)

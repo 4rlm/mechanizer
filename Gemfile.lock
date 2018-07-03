@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    mechanizer (0.10)
+    mechanizer (1.10)
       activesupport (~> 5.2)
       crm_formatter (~> 2.62)
       mechanize (~> 2.7, >= 2.7.6)

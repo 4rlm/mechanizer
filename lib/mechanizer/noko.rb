@@ -18,7 +18,7 @@ module Mechanizer
     def scrape(args)
       @timeout = args.fetch(:timeout, 60)
       url = args.fetch(:url)
-      noko_hash = { url: url, err_msg: nil, texts_and_hrefs: {}, page: nil }
+      noko_hash = { url: url, err_msg: nil, texts_and_paths: {}, page: nil }
       noko_hash = start_noko(noko_hash)
       noko_hash = extract_links(noko_hash)
       noko_hash
@@ -27,10 +27,10 @@ module Mechanizer
     def extract_links(noko_hash)
       links = noko_hash[:page]&.links
       unless noko_hash[:err_msg].present? || !links.present?
-        noko_hash[:texts_and_hrefs] = links.map do |link|
+        noko_hash[:texts_and_paths] = links.map do |link|
           text = link.text&.downcase&.gsub(/\s+/, ' ')&.strip
-          href = link&.href&.downcase&.strip
-          text_and_href = {text: text, href: href}
+          path = link&.path&.downcase&.strip
+          text_and_path = {text: text, path: path}
         end
       end
       noko_hash

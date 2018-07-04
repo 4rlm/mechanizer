@@ -31,7 +31,7 @@ def run_mechanizer
 
   err_msg = noko_hash[:err_msg]
   page = noko_hash[:page]
-  texts_and_hrefs = noko_hash[:texts_and_hrefs]
+  texts_and_paths = noko_hash[:texts_and_paths]
 
   other_projects = page.css('.other-project')&.text
   other_projects = other_projects.split("\n").reject(&:blank?)

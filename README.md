@@ -58,20 +58,20 @@ noko_hash = noko.scrape(args)
 ```
 err_msg = noko_hash[:err_msg]
 page = noko_hash[:page]
-texts_and_hrefs = noko_hash[:texts_and_hrefs]
+texts_and_paths = noko_hash[:texts_and_paths]
 ```
 
-### 4. Example Texts & Hrefs:
+### 4. Example Texts & paths:
 
 ```
-texts_and_hrefs = [
-  {:text=>"english 5 675 000+ articles", :href=>"//en.wikipedia.org/"},
-  {:text=>"日本語 1 111 000+ 記事", :href=>"//ja.wikipedia.org/"},
-  {:text=>"español 1 427 000+ artículos", :href=>"//es.wikipedia.org/"},
-  {:text=>"deutsch 2 195 000+ artikel", :href=>"//de.wikipedia.org/"},
-  {:text=>"русский 1 481 000+ статей", :href=>"//ru.wikipedia.org/"},
-  {:text=>"français 1 997 000+ articles", :href=>"//fr.wikipedia.org/"},
-  {:text=>"italiano 1 446 000+ voci", :href=>"//it.wikipedia.org/"}
+texts_and_paths = [
+  {:text=>"english 5 675 000+ articles", :path=>"//en.wikipedia.org/"},
+  {:text=>"日本語 1 111 000+ 記事", :path=>"//ja.wikipedia.org/"},
+  {:text=>"español 1 427 000+ artículos", :path=>"//es.wikipedia.org/"},
+  {:text=>"deutsch 2 195 000+ artikel", :path=>"//de.wikipedia.org/"},
+  {:text=>"русский 1 481 000+ статей", :path=>"//ru.wikipedia.org/"},
+  {:text=>"français 1 997 000+ articles", :path=>"//fr.wikipedia.org/"},
+  {:text=>"italiano 1 446 000+ voci", :path=>"//it.wikipedia.org/"}
 ]
 ```
 

@@ -10,7 +10,7 @@ describe 'Noko' do
       {:url=>"https://www.wikipedia.org", :timeout=>30}
     end
 
-    let(:noko_hash) { [:url, :texts_and_hrefs, :page] }
+    let(:noko_hash) { [:url, :texts_and_paths, :page] }
 
     it 'scrape' do
       expect(noko_obj.scrape(args).compact.keys).to eql(noko_hash)
@@ -20,9 +20,9 @@ describe 'Noko' do
 
   describe '#start_noko' do
     let(:noko_hash_in) do
-      {:url=>"https://www.wikipedia.org", :err_msg=>nil, :texts_and_hrefs=>{}, :page=>nil}
+      {:url=>"https://www.wikipedia.org", :err_msg=>nil, :texts_and_paths=>{}, :page=>nil}
     end
-    let(:noko_hash_out_keys) { [:url, :texts_and_hrefs, :page] }
+    let(:noko_hash_out_keys) { [:url, :texts_and_paths, :page] }
 
     it 'start_noko' do
       expect(noko_obj.start_noko(noko_hash_in).compact.keys).to eql(noko_hash_out_keys)
@@ -55,7 +55,7 @@ describe 'Noko' do
   ### Can't test this, b/c noko object can't be saved for input ###
   # describe '#extract_links' do
   #   let(:noko_hash_in) { NokoTestResults.wiki_noko_result }
-  #   let(:noko_hash_out) { NokoTestResults.wiki_texts_and_hrefs }
+  #   let(:noko_hash_out) { NokoTestResults.wiki_texts_and_paths }
   #
   #   it 'extract_links' do
   #     expect(noko_obj.extract_links(noko_hash_in)).to eql(noko_hash_out)

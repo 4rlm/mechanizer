@@ -16,8 +16,8 @@ task :console do
   require "active_support/all"
   ARGV.clear
 
-  noko_page_hash = run_mechanizer
-  binding.pry
+  # noko_page_hash = run_mechanizer
+  # binding.pry
 
   IRB.start
 end

@@ -29,7 +29,7 @@ module Mechanizer
       unless noko_hash[:err_msg].present? || !links.present?
         noko_hash[:texts_and_paths] = links.map do |link|
           text = link.text&.downcase&.gsub(/\s+/, ' ')&.strip
-          path = link&.path&.downcase&.strip
+          path = link&.href&.downcase&.strip
           text_and_path = {text: text, path: path}
         end
       end

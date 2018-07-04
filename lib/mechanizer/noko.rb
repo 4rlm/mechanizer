@@ -87,6 +87,8 @@ module Mechanizer
         err_msg = "Error: TCP"
       elsif err_msg.include?("execution expired")
         err_msg = "Error: Runtime"
+      elsif err_msg.include?("absolute URL needed")
+        err_msg = "Error: URL Not Absolute"
       else
         err_msg = "Error: Undefined"
       end

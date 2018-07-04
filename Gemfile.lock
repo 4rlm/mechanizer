@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    mechanizer (1.10)
+    mechanizer (1.11)
       activesupport (~> 5.2)
       crm_formatter (~> 2.62)
       mechanize (~> 2.7, >= 2.7.6)
@@ -46,7 +46,7 @@ GEM
     net-http-digest_auth (1.4.1)
     net-http-persistent (3.0.0)
       connection_pool (~> 2.2)
-    nokogiri (1.8.3)
+    nokogiri (1.8.4)
       mini_portile2 (~> 2.3.0)
     ntlm-http (0.1.1)
     pry (0.11.3)

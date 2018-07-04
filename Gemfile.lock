@@ -1,9 +1,9 @@
 PATH
   remote: .
   specs:
-    mechanizer (1.11)
+    mechanizer (1.12)
       activesupport (~> 5.2)
-      crm_formatter (~> 2.62)
+      crm_formatter (~> 2.64)
       mechanize (~> 2.7, >= 2.7.6)
       utf8_sanitizer (~> 2.16)
 
@@ -18,7 +18,7 @@ GEM
     coderay (1.1.2)
     concurrent-ruby (1.0.5)
     connection_pool (2.2.2)
-    crm_formatter (2.62)
+    crm_formatter (2.64)
       activesupport (~> 5.2)
       utf8_sanitizer (~> 2.16)
     diff-lcs (1.3)

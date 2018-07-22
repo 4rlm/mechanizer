@@ -1,5 +1,6 @@
 # Mechanizer
 
+[![Build Status](https://travis-ci.org/4rlm/mechanizer.svg?branch=master)](https://travis-ci.org/4rlm/mechanizer)
 [![Gem Version](https://badge.fury.io/rb/mechanizer.svg)](https://badge.fury.io/rb/mechanizer)
 [![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 

@@ -1,3 +1,3 @@
 module Mechanizer
-  VERSION = "1.12"
+  VERSION = "2.1"
 end
